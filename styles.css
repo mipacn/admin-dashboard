@@ -194,7 +194,7 @@ button:hover {
     background-color: #e2e8f0;
     display: grid;
     gap: 3vh;
-    padding: 3vh 3vh 5vh 3vh;
+    padding: 3vh 5vh 0vh 3vh;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -247,13 +247,65 @@ button:hover {
 .container-announcements {
     background-color: white;
     padding: 3vh;
+    border-radius: 2vh;
+}
+
+.announcement {
+    margin-bottom: 3vh;
+}
+
+.announcement.one, .announcement.two {
+    border-bottom: 1px gray solid;
+}
+
+.a-title {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.a-text {
+    margin: 0px;
+    margin-bottom: 3vh;
+    color: gray;
+}
+
+.trending {
+    margin-top: 7vh;
 }
 
 .container-trending {
     background-color: white;
     padding: 3vh;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
 
 .trend {
     display: flex;
+    gap: 2vh;
+    align-items: center;
+}
+
+.t-pfp-small {
+    border-radius: 100%;
+    height: 6.55vh;
+    width: auto;
+}
+
+.trending-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.t-username {
+    margin-top: auto;
+    margin: 0px;
+}
+
+.name {
+    margin: 0vh;
+    font-weight: 300;
+    color: gray;
 }
